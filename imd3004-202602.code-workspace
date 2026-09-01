@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../imd1103-202602"
 		}
 	],
 	"settings": {}

@@ -1,0 +1,4 @@
+torchinfo
+torch
+torchvision
+matplotlib

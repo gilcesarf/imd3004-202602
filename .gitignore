@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Datasets baixados pelos labs (FashionMNIST, CIFAR-10, etc.)
+labs/data/
+
+# Checkpoints do PyTorch
+*.pth
