@@ -219,6 +219,7 @@ __marimo__/
 
 # Datasets baixados pelos labs (FashionMNIST, CIFAR-10, etc.)
 labs/data/
+labs/files/
 
 # Checkpoints do PyTorch
 *.pth
