@@ -2,3 +2,4 @@ torchinfo
 torch
 torchvision
 matplotlib
+scikit-learn
