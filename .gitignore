@@ -2,6 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
+.DS_Store
 
 # C extensions
 *.so
@@ -223,3 +224,5 @@ labs/files/
 
 # Checkpoints do PyTorch
 *.pth
+
+resultados_lab2_dcgan/
