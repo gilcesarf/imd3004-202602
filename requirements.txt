@@ -3,3 +3,5 @@ torch
 torchvision
 matplotlib
 scikit-learn
+prdc
+torchmetrics
