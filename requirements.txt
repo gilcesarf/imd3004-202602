@@ -5,3 +5,11 @@ matplotlib
 scikit-learn
 prdc
 torchmetrics
+imageio
+imageio-ffmpeg
+gymnasium
+gymnasium[atari]
+gymnasium[accept-rom-license]
+moviepy 
+gymnasium-robotics
+pyvirtualdisplay
