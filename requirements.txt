@@ -13,3 +13,5 @@ gymnasium[accept-rom-license]
 moviepy 
 gymnasium-robotics
 pyvirtualdisplay
+gdown
+tensorflow
