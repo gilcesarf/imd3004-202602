@@ -226,3 +226,4 @@ labs/files/
 *.pth
 
 resultados_lab2_dcgan/
+checkpoints/
