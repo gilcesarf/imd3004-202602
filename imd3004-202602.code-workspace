@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "../imd1107-202601"
+		},
+		{
+			"path": "../gymnasium-fox-and-hounds"
+		},
+		{
+			"path": "../fox-and-hounds-rl"
 		}
 	],
 	"settings": {}

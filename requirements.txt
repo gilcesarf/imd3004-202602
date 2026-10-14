@@ -15,3 +15,6 @@ gymnasium-robotics
 pyvirtualdisplay
 gdown
 tensorflow
+nbconvert[webpdf]
+pytorch
+numpy
