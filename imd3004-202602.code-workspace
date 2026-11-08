@@ -14,6 +14,9 @@
 		},
 		{
 			"path": "../fox-and-hounds-rl"
+		},
+		{
+			"path": "../Deep-Reinforcement-Learning-Hands-On-Third-Edition"
 		}
 	],
 	"settings": {}
