@@ -19,5 +19,11 @@
 			"path": "../Deep-Reinforcement-Learning-Hands-On-Third-Edition"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"workbench.colorCustomizations": {
+				"notebook.editorBackground": "#181818",
+				"notebook.cellEditorBackground": "#181818",
+				"notebook.outputContainerBackgroundColor": "#181818"
+		}
+	}
 }
