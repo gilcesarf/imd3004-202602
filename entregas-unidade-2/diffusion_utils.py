@@ -109,14 +109,39 @@ def plot_data(data, num_points=1000, seed=42):
     plt.show()                                                                  # Exibe a figura
 
 
-def show_animation(name):
-    """Exibe a animação salva no arquivo HTML `name`; baixa o arquivo do Drive, se preciso."""
-    _download(ANIMATION_URLS.get(name), name)                                   # Baixa só se ainda não existir
-    if os.path.exists(name):
-        display(HTML(filename=name))                                            # A animação aparece como saída
-    else:                                                                       # Arquivo ausente
-        print(f"Animação indisponível: {name}. Confira o link em ANIMATION_URLS, no diffusion_utils.py.")
+# def show_animation(name):
+#     """Exibe a animação salva no arquivo HTML `name`; baixa o arquivo do Drive, se preciso."""
+#     _download(ANIMATION_URLS.get(name), name)                                   # Baixa só se ainda não existir
+#     if os.path.exists(name):
+#         display(HTML(filename=name))                                            # A animação aparece como saída
+#     else:                                                                       # Arquivo ausente
+#         print(f"Animação indisponível: {name}. Confira o link em ANIMATION_URLS, no diffusion_utils.py.")
 
+def show_animation(name):
+    """Exibe a animação HTML isolada em um iframe."""
+    from html import escape
+
+    _download(ANIMATION_URLS.get(name), name)  # Baixa se necessário
+
+    if not os.path.exists(name):
+        print(
+            f"Animação indisponível: {name}. "
+            "Confira o link em ANIMATION_URLS, no diffusion_utils.py."
+        )
+        return
+
+    with open(name, "r", encoding="utf-8") as arquivo:
+        conteudo = arquivo.read()
+
+    iframe = (
+        '<iframe '
+        'sandbox="allow-scripts" '
+        'style="width:100%; height:650px; border:0; background:white;" '
+        f'srcdoc="{escape(conteudo, quote=True)}">'
+        '</iframe>'
+    )
+
+    display(HTML(iframe))
 
 def plot_noise_schedule(noise_scheduler):
     """Plota os coeficientes por passo; α_t do sinal e (1-α_t) do ruído em três gráficos de linhas."""
